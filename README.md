@@ -56,7 +56,8 @@ VOC2012 數據集分為 20 類，包括背景為 21 類，分別有 person, bird
 ### Evaluation
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/precision.PNG)
 
-
+### Demo
+![image](https://github.com/03053020ITE/person-remove-background/blob/master/9ls3u-0yb35.gif)
 
 
 
