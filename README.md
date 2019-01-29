@@ -27,7 +27,11 @@
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/dilated3.PNG)
 
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/dilated4.PNG)
+                                                
+```
                                                 Evaluation
+```
+
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/precision.PNG)
 
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/abstract.PNG
