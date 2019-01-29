@@ -10,8 +10,8 @@
 利用人類部位 (human parsing) 和姿勢 (pose) 的連貫表示來促進每項任務，提出了一種聯合人體部位和姿勢估計網絡。首先我們使用 GitHub 上開源專案 LIP_JPPNet 下載預先訓練的模型並保存，接著在大陸中山大學人類網路物理智能集成實驗室下載LIP數據集，並對數據集標籤 (label) 進行數據增強的左右翻轉，最後訓練了 40 個 epoch 並保存最好的模型
 ### JPP Network
 #### Parsing And Pose Subnet
-部位子網路 (Parsing subnet) 在 Res-5 之後有兩個卷積來生成 parsing maps；
-姿勢子網路 (Pose subnet) 在 Res-4 之後添加幾個 3×3、1×1 卷積層來生成 pose maps
+* 部位子網路 (Parsing subnet) 在 Res-5 之後有兩個卷積來生成 parsing maps
+* 姿勢子網路 (Pose subnet) 在 Res-4 之後添加幾個 3×3、1×1 卷積層來生成 pose maps
 #### Refinement Network
 將前面 pose maps 和 parsing maps 重新集成到特徵空間中，方法是將它們映射到更多的通道，然後用四個卷積層 (𝟑×𝟑、𝟓×𝟓、𝟕×𝟕、𝟗×𝟗)，來捕獲足夠的局部上下文 (local context) 並增加 field size
 ### Look Into Person Dataset
@@ -26,7 +26,10 @@
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/mask1.PNG)
  
 ### Mask RCNN
-Mask RCNN 分成三個部分，第一個是主幹網絡用來進行特徵提取；第二個用來做邊界框識別（分類和回歸）；第三個就是mask預測用來對每一個 ROI 進行區分
+Mask RCNN 分成三個部分
+* 第一個是主幹網絡用來進行特徵提取
+* 第二個用來做邊界框識別（分類和回歸）
+* 第三個就是mask預測用來對每一個 ROI 進行區分
 ### MC COCO Dataset　
 COCO 數據集有 91 類，雖然比 ImageNet 和 SUN 類別少，但是每一類的圖像多，這有利於獲得更多的每類中位於某種特定場景的能力，對比 PASCAL VOC，其有更多類和圖像
 ### Mask RCNN + MC COCO 2017 Dataset　Predict
