@@ -22,8 +22,9 @@
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/jpp%2Blip2.PNG)
 
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/jpp%2Blip3.PNG)
-
+# -----------------------------------------------------------
 ![image](https://github.com/03053020ITE/person-remove-background/blob/master/mask1.PNG)
+ 
 ### Mask RCNN
 Mask RCNN 分成三個部分，第一個是主幹網絡用來進行特徵提取；第二個用來做邊界框識別（分類和回歸）；第三個就是mask預測用來對每一個 ROI 進行區分
 ### MC COCO Dataset　
